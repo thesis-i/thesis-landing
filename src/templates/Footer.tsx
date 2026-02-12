@@ -13,7 +13,7 @@ const Footer = () => (
         iconList={
           <>
             <Link
-              href="mailto:vbretsko@thesis-i.com"
+              href="/contact/"
               className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
             >
               <svg
@@ -59,7 +59,7 @@ const Footer = () => (
           <Link href="#team">Team</Link>
         </li>
         <li>
-          <Link href="#contact">Contact</Link>
+          <Link href="/contact/">Contact</Link>
         </li>
       </CenteredFooter>
     </Section>

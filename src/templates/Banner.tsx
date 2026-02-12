@@ -10,7 +10,7 @@ const Banner = () => (
       title="Ready to build something great?"
       subtitle="Let's talk about your project."
       button={
-        <Link href="mailto:vbretsko@thesis-i.com">
+        <Link href="/contact/">
           <Button>Contact Us</Button>
         </Link>
       }

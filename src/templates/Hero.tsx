@@ -22,7 +22,7 @@ const Hero = () => (
           <Link href="#team">Team</Link>
         </li>
         <li>
-          <Link href="#contact">Contact</Link>
+          <Link href="/contact/">Contact</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -37,7 +37,7 @@ const Hero = () => (
         }
         description="A Lviv-based software studio with 5+ years of experience each, building scalable mobile and backend solutions for clients worldwide."
         button={
-          <Link href="#contact">
+          <Link href="/contact/">
             <Button xl>Get in Touch</Button>
           </Link>
         }
