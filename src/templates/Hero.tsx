@@ -5,19 +5,24 @@ import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { ThemeToggle } from '../navigation/ThemeToggle';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-gray-100 dark:bg-gray-800">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavbarTwoColumns logo={<Logo xl />} themeToggle={<ThemeToggle />}>
         <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
+          <Link href="#services">Services</Link>
         </li>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="#cases">Cases</Link>
+        </li>
+        <li>
+          <Link href="#team">Team</Link>
+        </li>
+        <li>
+          <Link href="#contact">Contact</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -26,14 +31,14 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Engineering Excellence,\n'}
+            <span className="text-primary-500">Delivered.</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="A Lviv-based software studio with 5+ years of experience each, building scalable mobile and backend solutions for clients worldwide."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
+          <Link href="#contact">
+            <Button xl>Get in Touch</Button>
           </Link>
         }
       />

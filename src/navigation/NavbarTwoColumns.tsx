@@ -4,6 +4,7 @@ import type { ReactNode } from 'react';
 type INavbarProps = {
   logo: ReactNode;
   children: ReactNode;
+  themeToggle?: ReactNode;
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
@@ -13,10 +14,12 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </div>
 
     <nav>
-      <ul className="navbar flex items-center text-xl font-medium text-gray-800">
+      <ul className="navbar flex items-center text-xl font-medium text-gray-800 dark:text-gray-200">
         {props.children}
       </ul>
     </nav>
+
+    {props.themeToggle}
 
     <style jsx>
       {`
